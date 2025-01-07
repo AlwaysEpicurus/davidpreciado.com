@@ -10,45 +10,80 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">David Preciado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header Section -->
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1>Oracle Cloud Showcase</h1>
-            <p class="lead">Highlighting Projects and Analytics Hosted on Oracle Cloud</p>
+            <p class="lead">Demonstrating the power of Oracle Cloud through active deployments and projects.</p>
         </div>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- Main Content -->
     <main>
         <!-- Featured Deployments Section -->
         <section class="py-5">
             <div class="container">
                 <h2 class="text-center mb-4">Featured Deployments</h2>
-                <p class="text-center mb-4">
-                    Explore projects hosted on Oracle Cloud that demonstrate scalability, performance, and innovation.
-                </p>
                 <div class="row g-4">
-                    <!-- Deployment Card -->
+                    <!-- Deployment 1 -->
                     <div class="col-md-6">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h4 class="card-title">Oracle APEX App</h4>
+                                <h4 class="card-title">Static Website Hosting</h4>
                                 <p class="card-text">
-                                    A low-code application deployed on Oracle Autonomous Database, showcasing rapid app development.
+                                    Hosted the main website on Oracle Cloud Object Storage. This setup ensures scalability and high availability while leveraging Oracle's robust infrastructure.
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Deployment Card -->
+                    <!-- Deployment 2 -->
                     <div class="col-md-6">
                         <div class="card shadow">
                             <div class="card-body">
                                 <h4 class="card-title">Highly Available Web App</h4>
                                 <p class="card-text">
-                                    A web application with autoscaling and load balancing to ensure high availability.
+                                    Deployed a web application utilizing Oracle's Load Balancer and Auto Scaling to ensure seamless performance under varying loads.
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Deployment 3 -->
+                    <div class="col-md-6">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title">Oracle APEX Application</h4>
+                                <p class="card-text">
+                                    Built a low-code application using Oracle APEX, showcasing rapid development capabilities on Oracle Autonomous Database.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Deployment 4 -->
+                    <div class="col-md-6">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title">Object Storage Metrics</h4>
+                                <p class="card-text">
+                                    Monitored and analyzed bucket usage and object storage performance to ensure efficient resource management.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -56,7 +91,34 @@
             </div>
         </section>
 
-       
+        <!-- Security Practices Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Security Practices</h2>
+                <p>
+                    Oracle Cloud's built-in security features are augmented by additional measures implemented for davidpreciado.com. 
+                    Learn more on our <a href="security.html" class="text-primary">Security Page</a>.
+                </p>
+                <ul>
+                    <li>DNS and SSL/TLS configuration using Cloudflare.</li>
+                    <li>Custom Web Application Firewall (WAF) rules for traffic filtering.</li>
+                    <li>Access controls and regular updates to ensure the security of deployed resources.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Future Plans Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Future Plans</h2>
+                <ul>
+                    <li>Integrate advanced analytics dashboards to visualize key performance metrics in real-time.</li>
+                    <li>Expand multi-cloud capabilities to include AWS, Azure, and GCP for hybrid deployments.</li>
+                    <li>Develop and host APIs to enhance interconnectivity across services.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="bg-dark text-white text-center py-4">
