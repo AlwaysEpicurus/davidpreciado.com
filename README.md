@@ -1,6 +1,6 @@
 # davidpreciado.com
 
-**Personal Website Project**
+**Showcases Technical Expertise (Cloud, Secuirty, and more)**
 
 Welcome to the repository for **davidpreciado.com**, my personal website. This project showcases my technical expertise, professional skills, and achievements. The site serves as a platform to share insights, projects, and a demonstration of hosting capabilities using Oracle Cloud Infrastructure.
 
