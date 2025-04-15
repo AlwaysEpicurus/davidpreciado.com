@@ -1,53 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Preciado</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Preciado</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link href="styles/main.css" rel="stylesheet" />
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">David Preciado</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body class="custom-body">
 
-    <!-- Hero Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Welcome to My Website</h1>
-            <p class="lead">Showcasing my technical expertise and professional journey</p>
-        </div>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold text-dark" href="#">David Preciado</a>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Your content goes here -->
+<!-- Hero Section -->
+<header class="hero-section d-flex align-items-center py-5 position-relative">
+    <div class="container-xl d-flex flex-column flex-md-row align-items-center justify-content-between gap-5">
+      <!-- text + image -->
+      <div class="text-md-start text-center">
+        <h1 class="display-5 fw-bold">Clarity. Creativity. Progress.</h1>
+        <p class="lead mt-3">Helping people improve their lives and work by communicating what matters—and using technology to make the most of it.</p>
+        <a href="https://www.linkedin.com/in/davidpreciado/" class="btn btn-highlight mt-3" target="_blank" rel="noopener">Let’s Work Together</a>
+      </div>
+      <img src="assets/images/headshot.jpg" alt="David Preciado Headshot" class="img-fluid rounded-circle" width="200" height="200" />
+    </div>
+  </header>
+  
+  <!-- ✅ Move scroll arrow OUTSIDE the header -->
+  <div class="scroll-arrow">
+    <a href="#about-section" class="scroll-link" aria-label="Scroll to about section">
+      <span>&#8675;</span>
+    </a>
+  </div>
+  
+  <hr class="my-5" />
+  
+  <!-- About -->
+  <section id="about-section" class="container pt-4 pb-2 text-center">
+    <h2 class="fw-bold mb-4">Hi, I’m David.</h2>
+    <p class="fs-5 mb-3">I help people and organizations get unstuck—by seeing what’s really going on, then building better ways forward.</p>
+    <p class="fs-5">From coaching teams to designing automation, I bring energy, clarity, and a plan. My mission is simple: create space for human potential to thrive.</p>
+  </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p>&copy; 2024 David Preciado. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://github.com/AlwaysEpicurus" class="text-white">GitHub</a></li>
-                <li class="list-inline-item"><a href="contact.html" class="text-white">Contact</a></li>
-            </ul>
-        </div>
-    </footer>
+  <!-- Testimonial Quote -->
+  <div class="pull-quote-divider">
+    <span class="pull-quote-icon">“</span>
+    <blockquote class="pull-quote-text">
+      David is a shining star who brings strategy, empathy, and execution together.
+    </blockquote>
+  </div>
+  
+  
+  
+  
+  
+  
+  
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- What I Do -->
+  <section id="what-i-do" class="container py-4 text-center">
+    <h2 class="fw-bold mb-4">What I Do</h2>
+    <ul class="styled-list fs-5 mx-auto text-start" style="max-width: 600px;">
+      <li class="mb-2">Align teams with clear strategy and storytelling</li>
+      <li class="mb-2">Design automation to free up time and reduce noise</li>
+      <li class="mb-2">Coach and mentor teams through complex change</li>
+      <li class="mb-2">Bring energy and structure to help ideas move forward</li>
+    </ul>
+  </section>
+<!-- Scroll Arrow to CTA -->
+<div class="scroll-arrow scroll-arrow--cta">
+    <a href="#cta-section" class="scroll-link" aria-label="Scroll to Call To Action">
+      <span>&#8675;</span>
+    </a>
+  </div>
+  
+  <hr class="my-5" />
+  
+  <hr class="my-5" />
+
+  <!-- Call to Action -->
+  <section id="cta-section" class="container text-center py-5">
+    <p class="fs-4 fw-semibold text-uppercase text-muted">
+      Got a challenge that needs clarity—or momentum?
+      <span class="d-block mt-2">Let’s talk.</span>
+    </p>
+    <a href="https://www.linkedin.com/in/davidpreciado/" class="btn btn-primary mt-3" target="_blank" rel="noopener">Book a Call</a>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="main-footer text-center py-4">
+    <p>&copy; <span id="copyright-year"></span> David Preciado. All Rights Reserved.</p>
+    <div class="form-check form-switch d-flex justify-content-center mt-3">
+      <input class="form-check-input" type="checkbox" id="dark-mode-toggle" role="switch" aria-label="Toggle dark mode">
+      <label class="form-check-label ms-2" for="dark-mode-toggle">Dark Mode</label>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
