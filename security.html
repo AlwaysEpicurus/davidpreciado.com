@@ -1,174 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Measures - David Preciado</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security Measures – David Preciado</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom Styles -->
+  <link href="styles/main.css" rel="stylesheet"/>
+  <link href="styles/security.css" rel="stylesheet"/>
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">David Preciado</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+<body class="custom-body">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold text-dark" href="/">David Preciado</a>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Tech Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Fun</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Security Measures</h1>
+      <p class="lead">Committed to safeguarding davidpreciado.com with industry best practices</p>
+      <p class="fs-5">Protecting the integrity, confidentiality, and availability is a top priority. I implement modern security best practices and regularly review our infrastructure to keep up my skills.</p>
+    </div>
+  </header>
+  
+
+ <!-- DNS & SSL -->
+<section class="section container mb-5">
+    <h2 class="section-title text-center">DNS and SSL/TLS Security</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">DNS Management</h5>
+            <p class="mb-0">Traffic is routed securely using Cloudflare, protecting against DDoS attacks and boosting site performance.</p>
+          </div>
         </div>
-    </nav>
-
-    <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Security Measures</h1>
-            <p class="lead">Committed to safeguarding davidpreciado.com with industry best practices</p>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">SSL/TLS Configuration</h5>
+            <p class="mb-0">Full (Strict) mode ensures traffic encryption for maximum security between users and servers.</p>
+          </div>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Overview Section -->
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Overview</h2>
-                <p>
-                    At <strong>davidpreciado.com</strong>, protecting the integrity, confidentiality, and availability of our website is a top priority. We implement modern security best practices and regularly review our infrastructure to ensure a secure experience for visitors.
-                </p>
-            </div>
-        </section>
-
-        <!-- DNS and SSL Section -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">DNS and SSL/TLS Security</h2>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">DNS Management</h4>
-                                <p class="card-text">
-                                    Traffic is routed securely using Cloudflare, ensuring protection from common DDoS attacks and enhancing website performance.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">SSL/TLS Configuration</h4>
-                                <p class="card-text">
-                                    Full (Strict) SSL/TLS mode encrypts traffic between users and servers for maximum protection.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">HSTS Enforcement</h4>
-                                <p class="card-text">
-                                    HTTP Strict Transport Security (HSTS) enforces HTTPS connections to prevent downgrade attacks.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Web Application Firewall Section -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Web Application Firewall</h2>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">Traffic Filtering</h4>
-                                <p class="card-text">
-                                    A Web Application Firewall (WAF) blocks malicious traffic and protects against common threats like SQL injection and cross-site scripting (XSS).
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">JavaScript Protection</h4>
-                                <p class="card-text">
-                                    Key JavaScript assets are protected with Cloudflare's JS Challenge, reducing unauthorized access risks.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Additional Security Measures Section -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Additional Security Measures</h2>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">Secure Cloud Hosting</h4>
-                                <p class="card-text">
-                                    Hosted on Oracle Cloud, with public access limited to essential resources only.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">Regular Updates</h4>
-                                <p class="card-text">
-                                    Dependencies and security configurations are periodically reviewed and updated to address emerging vulnerabilities.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h4 class="card-title">Access Control</h4>
-                                <p class="card-text">
-                                    Administrative access is restricted to authorized personnel.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="""bg-dark text-white text-center py-4"></footer>
-        <div class="""container"></div>
-            <p>&copy; 2025 David Preciado. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-                <li class="list-inline-item"><a href="projects.html" class="text-white">Projects</a></li>
-                <li class="list-inline-item"><a href="contact.html" class="text-white">Contact</a></li>
-                <li class="list-inline-item"><a href="oracle.html" class="text-white">Oracle Cloud</a></li>
-            </ul>
+      </div>
+      <div class="col-md-12">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="fw-bold">HSTS Enforcement</h5>
+            <p class="mb-0">HTTP Strict Transport Security (HSTS) enforces HTTPS to prevent downgrade attacks.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+  
+  <!-- WAF -->
+  <section class="section container mb-5">
+    <h2 class="section-title text-center">Web Application Firewall</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">Traffic Filtering</h5>
+            <p class="mb-0">Blocks malicious traffic and protects against threats like SQL injection and cross-site scripting (XSS).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">JavaScript Protection</h5>
+            <p class="mb-0">Cloudflare’s JS Challenge reduces unauthorized access risks to sensitive scripts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Additional Security -->
+  <section class="section container mb-5">
+    <h2 class="section-title text-center">Additional Security Measures</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">Secure Cloud Hosting</h5>
+            <p class="mb-0">Public access on Oracle Cloud is restricted to only essential resources.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">Regular Updates</h5>
+            <p class="mb-0">Security configurations and dependencies are reviewed regularly for vulnerabilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="fw-bold">Access Control</h5>
+            <p class="mb-0">Only authorized administrators have backend access.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="main-footer text-center py-4 mt-5">
+    <p>&copy; <span id="copyright-year"></span> David Preciado. All Rights Reserved.</p>
+    <p class="mb-0">
+      <a href="index.html" class="text-white">Home</a> |
+      <a href="projects.html" class="text-white">Projects</a> |
+      <a href="oracle.html" class="text-white">Oracle Cloud</a>
+    </p>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts -->
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

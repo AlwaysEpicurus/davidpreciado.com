@@ -1,0 +1,60 @@
+/* === ORACLE CLOUD PAGE STYLES === */
+
+.section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #4B3F72;
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  header .lead {
+    color: #d3cce6 !important;  /* Add !important to override Bootstrap */
+    font-size: 1.25rem;
+  }
+  
+  
+  /* Card Layout */
+  .card {
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .card-text {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .main-footer {
+    background-color: #4B3F72;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  .main-footer a {
+    color: white;
+  }
+  .main-footer a:hover {
+    color: #F4A259;
+    text-decoration: underline;
+  }
+  

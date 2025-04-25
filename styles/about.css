@@ -1,0 +1,120 @@
+/* === ABOUT PAGE SPECIFIC === */
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: url('../assets/images/skye-studios-NDLLFxTELrU-unsplash.jpg') center/cover no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* General Section Styling */
+.section {
+  padding: 4rem 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Two Column Layout */
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.two-column > div {
+  flex: 1 1 45%;
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+  }
+}
+
+/* Scroll Arrow Styling */
+.scroll-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 2rem;
+  color: #4B3F72;
+  animation: bounce 2s infinite;
+  margin-bottom: 2rem;
+  scroll-margin-top: 100px;
+}
+
+.scroll-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.scroll-link:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Scroll Margin Targets for Clean Scroll */
+#core-values {
+  scroll-margin-top: 0.5px;
+}
+
+#industries {
+  padding-bottom: 0rem; /* Maintain vertical spacing */
+}
+
+#connecting-statement {
+  scroll-margin-top: 50px;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Optional Scroll Arrow Adjustments */
+.scroll-arrow.scroll-arrow--spaced {
+  margin-top: -0.5rem; /* Can tweak for visual balance */
+}
+
+/* Core Indstustries Section */
+#core-industries {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 100px;
+}

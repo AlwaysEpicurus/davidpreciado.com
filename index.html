@@ -13,6 +13,7 @@
 
   <!-- Custom Styles -->
   <link href="styles/main.css" rel="stylesheet" />
+  <link href="styles/home.css" rel="stylesheet" />  
 </head>
 <body class="custom-body">
 
@@ -29,8 +30,10 @@
   </nav>
 
 <!-- Hero Section -->
-<header class="hero-section d-flex align-items-center py-5 position-relative">
-    <div class="container-xl d-flex flex-column flex-md-row align-items-center justify-content-between gap-5">
+<header class="hero-section d-flex align-items-center position-relative">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-5">
+      <!-- contents go here: heading, paragraph, button, image -->
       <!-- text + image -->
       <div class="text-md-start text-center">
         <h1 class="display-5 fw-bold">Clarity. Creativity. Progress.</h1>
@@ -39,9 +42,10 @@
       </div>
       <img src="assets/images/Headshot_3.jpeg" alt="David Preciado Headshot" class="img-fluid rounded-circle" width="200" height="200" />
     </div>
+  </div>
   </header>
   
-  <!-- ✅ Move scroll arrow OUTSIDE the header -->
+  <!--  scroll arrow from the hero section -->
   <div class="scroll-arrow">
     <a href="#about-section" class="scroll-link" aria-label="Scroll to about section">
       <span>&#8675;</span>
@@ -50,7 +54,9 @@
   
   <hr class="my-5" />
   
-  <!-- About -->
+   <!-- Abou Preview -->
+  <section id="about-preview">
+      <!-- About -->
   <section id="about-section" class="container pt-4 pb-2 text-center">
     <h2 class="fw-bold mb-4">Hi, I’m David.</h2>
     <p class="fs-5 mb-3">I help people and organizations get unstuck—by seeing what’s really going on, then building better ways forward.</p>
@@ -65,12 +71,6 @@
     </blockquote>
   </div>
   
-  
-  
-  
-  
-  
-  
 
   <!-- What I Do -->
   <section id="what-i-do" class="container py-4 text-center">
@@ -82,13 +82,17 @@
       <li class="mb-2">Bring energy and structure to help ideas move forward</li>
     </ul>
   </section>
+  </section>
+  
 <!-- Scroll Arrow to CTA -->
 <div class="scroll-arrow scroll-arrow--cta">
     <a href="#cta-section" class="scroll-link" aria-label="Scroll to Call To Action">
       <span>&#8675;</span>
-    </a>
+    </a> 
   </div>
-  
+  <div style="height: 5rem;"></div>
+
+
   <hr class="my-5" />
   
   <hr class="my-5" />
@@ -106,10 +110,6 @@
   <!-- Footer -->
   <footer class="main-footer text-center py-4">
     <p>&copy; <span id="copyright-year"></span> David Preciado. All Rights Reserved.</p>
-    <div class="form-check form-switch d-flex justify-content-center mt-3">
-      <input class="form-check-input" type="checkbox" id="dark-mode-toggle" role="switch" aria-label="Toggle dark mode">
-      <label class="form-check-label ms-2" for="dark-mode-toggle">Dark Mode</label>
-    </div>
   </footer>
 
   <!-- Scripts -->

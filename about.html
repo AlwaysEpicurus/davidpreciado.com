@@ -13,87 +13,8 @@
 
   <!-- Custom Styles -->
   <link href="styles/main.css" rel="stylesheet"/>
-  <style>
-    .hero-section {
-      position: relative;
-      background: url('assets/images/skye-studios-NDLLFxTELrU-unsplash.jpg') center/cover no-repeat;
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 1rem;
-      color: #fff;
-      text-align: center;
-    }
-  
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-  
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-    }
-  
-    .section {
-      padding: 4rem 1rem;
-    }
-  
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-    }
-  
-    .two-column {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-  
-    .two-column > div {
-      flex: 1 1 45%;
-    }
-  
-    @media (max-width: 768px) {
-      .two-column {
-        flex-direction: column;
-      }
-    }
-  
-    /* Scroll spacing targets (so arrows scroll cleanly) */
-    #core-values {
-      scroll-margin-top: .5px;
-    }
-  
-    #industries {
-  padding-bottom: 0rem; /* Add more space after industries text */
-}
+  <link href="styles/about.css" rel="stylesheet"/>
 
-#connecting-statement {
-  scroll-margin-top: 50px;
-  min-height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-
-
-.scroll-arrow.scroll-arrow--spaced {
-    margin-top: -0.5rem; /* Adjust as needed */
-  }
-  </style>
-  
 </head>
 <body class="custom-body">
 
@@ -127,7 +48,8 @@
   </a>
 </div>
 
-
+<!-- Core Values + Industries Wrapper -->
+<section id="core-industries">
   <!-- Core Values -->
   <section id="core-values" class="section container">
     <h2 class="section-title">My Core Values</h2>
@@ -153,7 +75,7 @@
   <h2 class="section-title">Industries I’ve Worked In</h2>
   <p class="fs-5 mb-4">Enterprise SaaS &bull; Digital Marketing & MarTech &bull; E-commerce & Marketplace &bull; Workplace Experience & Real Estate &bull; Media, Entertainment & Events &bull; Health & Wellness Tech &bull; Security & Cyber Risk</p>
 </section>
-
+</section>
   <!-- Scroll Arrow -->
   <div class="scroll-arrow scroll-arrow--spaced">
     <a href="#connecting-statement" class="scroll-link" aria-label="Scroll to Connecting Statement"><span>&#8675;</span></a>
@@ -174,10 +96,6 @@
   <!-- Footer -->
   <footer class="main-footer text-center py-4">
     <p>&copy; <span id="copyright-year"></span> David Preciado. All Rights Reserved.</p>
-    <div class="form-check form-switch d-flex justify-content-center mt-3">
-      <input class="form-check-input" type="checkbox" id="dark-mode-toggle" role="switch" aria-label="Toggle dark mode">
-      <label class="form-check-label ms-2" for="dark-mode-toggle">Dark Mode</label>
-    </div>
   </footer>
 
   <!-- Scripts -->
